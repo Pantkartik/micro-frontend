@@ -1,0 +1,53 @@
+body{
+  background-color: black;
+
+}
+
+.card{
+  background-color: rgb(233, 123, 123);
+  padding: 20px;
+  border-radius: 20px;
+  margin:70px
+}
+.navbar {
+  background-color: rgb(244, 184, 150);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 3px;
+  border-radius: 6px;
+}
+#span{
+color: black;
+}
+.leftnav {
+  color: white;
+}
+
+.rightnav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.rightnav a {
+  color: white;
+  text-decoration: none;
+}
+
+.rightnav button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.rightnav button:first-of-type {
+  background-color: white;
+  color: rgb(185, 136, 146);
+}
+
+.rightnav button:last-of-type {
+  background-color: #333;
+  color: white;
