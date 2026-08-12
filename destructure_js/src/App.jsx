@@ -1,22 +1,24 @@
 import React from "react";
 import { useState } from "react";
-const [user,setUser]=useState({user:"kartik",age:20})
-function ChangeUser(){
-  // destructing the code detaching the reference
-  newUser={...user}
-  newUser.age=27;
-  newUser.user='naman';
-  setUser(newUser);
-}
+
 const App=()=>{
-  return (
-    <>
-<h1 >Hello</h1>
-<button onClick={newUser}></button>
-
-</>
-  )
-
+  const [count,setCount]=useState(0);
+  function IncreaseCount(){
+    setCount(count+1);
+  }
+  function DecreaseCount(){
+    setCount(count-1);
+  }
+return(
+  <>
+  <div>
+    <h1> The number increasing is {count}</h1>
+  </div>
+<button onClick={IncreaseCount}>Increase</button>
+<button onClick={DecreaseCount}>Decrease</button>
+  </>
+)
 }
+
 
 export default App;
