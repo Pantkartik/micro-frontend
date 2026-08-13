@@ -4,6 +4,12 @@ import Likes from './Components/Likes';
 
 const App=()=>{
   const [likes,setLikes]=useState(0);
+  const data=[10,20,30,40];
+  function Add(){
+    setLikes(prev=>(prev+1)) // batch update
+    setLikes(likes+1);
+  }
+  
   return(
     <>
 
